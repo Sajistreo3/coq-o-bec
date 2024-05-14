@@ -1,7 +1,7 @@
 {
   "name": "coc",
   "version": "1.0.0",
-  "description": "Coq-O-beC Bakery Restaurant",
+  "description": "Coq-O-Bec Bakery Restaurant",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
