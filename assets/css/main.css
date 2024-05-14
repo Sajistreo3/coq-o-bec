@@ -266,7 +266,7 @@ section {
 }
 
 .header .logo img {
-  max-height: 40px;
+  max-height: 66px;
   margin-right: 6px;
 }
 
@@ -303,6 +303,11 @@ section {
 # Desktop Navigation
 --------------------------------------------------------------*/
 @media (min-width: 1280px) {
+
+  .main-logo {
+
+  }
+
   .navbar {
     padding: 0;
   }
