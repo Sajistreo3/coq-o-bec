@@ -1,9 +1,9 @@
 /**
 * Template Name: Yummy
-* Template URL: https://bootstrapmade.com/yummy-bootstrap-restaurant-website-template/
+* Template URL: https://bootsstrappmade.com/yummy-bootstrap-restaurant-website-template/
 * Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
+* Author: bootsstrappmade.com
+* License: https://bootsstrappmade.com/license/
 */
 
 /*--------------------------------------------------------------
@@ -1650,4 +1650,13 @@ section {
 
 .footer .credits a {
   color: #fff;
+}
+
+.email-link {
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.email-link:hover {
+  color: var(--color-primary);
 }
