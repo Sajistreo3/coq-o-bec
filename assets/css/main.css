@@ -1475,6 +1475,16 @@ section {
   background: #ec2727;
 }
 
+.contact-section {
+  color: var(--color-default);
+  transition: 0.2s;
+}
+
+
+.contact-section:hover {
+  color: #ec2727;
+}
+
 @keyframes animate-loading {
   0% {
     transform: rotate(0deg);
@@ -1657,11 +1667,11 @@ section {
   color: #fff;
 }
 
-.email-link {
+.contact-links {
   color: rgba(255, 255, 255, 0.7);
   text-decoration: none;
   transition: 0.2s;
 }
-.email-link:hover {
+.contact-links:hover {
   color: var(--color-primary);
 }
