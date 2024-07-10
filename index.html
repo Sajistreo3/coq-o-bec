@@ -72,7 +72,7 @@
           <!-- <h1>Coq-O-Bec<span>.</span></h1> -->
           <img
             class="main-logo"
-            src="./assets/img/COClogo-simpleBlack.png"
+            src="./assets/img/COClogo.png"
             alt=""
           />
         </a>
@@ -1413,15 +1413,19 @@
 
           <div class="row gy-4">
             <div class="col-md-6">
-              <a target="_blank" href="https://maps.app.goo.gl/VyxfiEj2LECp89Ey8" class="contact-section">
-              <div class="info-item d-flex align-items-center">
-                <i class="icon bi bi-map flex-shrink-0"></i>
-                <div>
-                  <h3>Our Address</h3>
-                  <p>11985 Boulevard Gouin O, Pierrefonds, QC H8Z 1V8</p>
+              <a
+                target="_blank"
+                href="https://maps.app.goo.gl/VyxfiEj2LECp89Ey8"
+                class="contact-section"
+              >
+                <div class="info-item d-flex align-items-center">
+                  <i class="icon bi bi-map flex-shrink-0"></i>
+                  <div>
+                    <h3>Our Address</h3>
+                    <p>11985 Boulevard Gouin O, Pierrefonds, QC H8Z 1V8</p>
+                  </div>
                 </div>
-              </div>
-            </a>
+              </a>
             </div>
             <!-- End Info Item -->
             <div class="col-md-6">
@@ -1438,7 +1442,10 @@
             </div>
 
             <div class="col-md-6">
-              <a href="mailto:mohsenmouin1337@gmail.com" class="contact-section">
+              <a
+                href="mailto:mohsenmouin1337@gmail.com"
+                class="contact-section"
+              >
                 <div class="info-item d-flex align-items-center">
                   <i class="icon bi bi-envelope flex-shrink-0"></i>
                   <div>
@@ -1466,12 +1473,8 @@
             <!-- End Info Item -->
           </div>
 
-          <form
-            action="forms/contact.php"
-            method="post"
-            role="form"
-            class="php-email-form p-3 p-md-4"
-          >
+          <form action="" id="sendingMail" method="POST" role="form" class="php-email-form p-3 p-md-4">
+
             <div class="row">
               <div class="col-xl-6 form-group">
                 <input
@@ -1625,6 +1628,28 @@
     <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/php-email-form/validate.js"></script>
+    <script>
+      document.getElementById("sendingMail").addEventListener("submit", function(event) {
+        event.preventDefault();
+        const formData = new FormData(this);
+        fetch('https://us-central1-your-project.cloudfunctions.net/sendEmailFromForm', {
+          method: 'POST',
+          body: JSON.stringify({
+            name: formData.get('name'),
+            email: formData.get('email'),
+            subject: formData.get('subject'),
+            message: formData.get('message')
+          }),
+          headers: {
+            'Content-Type': 'application/json'
+          }
+        })
+        .then(response => response.text())
+        .then(data => alert('Email sent successfully!'))
+        .catch(error => console.error('Error:', error));
+      });
+      </script>
+      
     <script type="module">
       import firebase from "./node_modules/firebase/firebase-app.js";
       // Add additional Firebase products that you want to use

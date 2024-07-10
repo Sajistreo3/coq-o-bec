@@ -247,7 +247,7 @@ section {
 # Header
 --------------------------------------------------------------*/
 .header {
-  background: #fff;
+  background: #1C1A19;
   transition: all 0.5s;
   z-index: 997;
   height: 90px;
