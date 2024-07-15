@@ -303,7 +303,7 @@ section {
 
 #lang-btn {
   width: 45px;
-  color: black;
+  color: white;
   /* background-color: #FEDC10; */
   cursor: pointer;
   text-decoration: none;
@@ -327,6 +327,7 @@ section {
 
 #lang-btn:hover {
   animation: bounce 0.5s;
+  color: #ec2727;
 }
 
 /*--------------------------------------------------------------
@@ -556,7 +557,7 @@ section {
   }
 
   .mobile-nav-show {
-    color: #FEDC10;
+    color: white;
     font-size: 28px;
     cursor: pointer;
     line-height: 0;
