@@ -984,13 +984,13 @@ section {
   #menupart1 img,
   #menupart2 img,
   #menupart3 img {
-    height: 605px;
+    height: 940px;
   }
 
   #menupart4 img,
   #menupart5 img,
   #menupart6 img {
-    height: 700px;
+    height: 945px;
   }
 }
 
@@ -998,13 +998,13 @@ section {
   #menupart1 img,
   #menupart2 img,
   #menupart3 img {
-    height: 515px;
+    height: 800px;
   }
 
   #menupart4 img,
   #menupart5 img,
   #menupart6 img {
-    height: 700px;
+    height: 805px;
   }
 }
 
@@ -1012,47 +1012,47 @@ section {
   #menupart1 img,
   #menupart2 img,
   #menupart3 img {
-    height: 425px;
+    height: 660px;
   }
 
   #menupart4 img,
   #menupart5 img,
   #menupart6 img {
-    height: 515px;
+    height: 665px;
   }
 }
 
 @media (max-width: 1024px) and (min-width: 992px) {
   #menupart1 img,
   #menupart2 img {
-    height: 650px;
+    height: 1015px;
   }
 
   #menupart3 img,
   #menupart4 img {
-    height: 650px;
+    height: 1020px;
   }
 
   #menupart5 img,
   #menupart6 img {
-    height: 800px;
+    height: 1020px;
   }
 }
 
 @media (max-width: 991px) and (min-width: 769px) {
   #menupart1 img,
   #menupart2 img {
-    height: 450px;
+    height: 735px;
   }
 
   #menupart3 img,
   #menupart4 img {
-    height: 530px;
+    height: 740px;
   }
 
   #menupart5 img,
   #menupart6 img {
-    height: 580px;
+    height: 740px;
   }
 }
 
