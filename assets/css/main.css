@@ -309,20 +309,24 @@ section {
   text-decoration: none;
   transition: transform 0.2s;
 }
-#lang-btn img { 
+#lang-btn img {
   width: 100%;
 }
 
 @keyframes bounce {
-  0%, 20%, 50%, 80%, 100% {
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
     transform: scale(1);
-}
-40% {
+  }
+  40% {
     transform: scale(1.2);
-}
-60% {
+  }
+  60% {
     transform: scale(0.9);
-}
+  }
 }
 
 #lang-btn:hover {
@@ -820,7 +824,7 @@ section {
 --------------------------------------------------------------*/
 .stats-counter {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../img/foods/menubanner.png") center center;
+    url("../img/foods/menubanner.webp") center center;
   background-size: cover;
   padding: 111px 0;
 }
@@ -854,7 +858,7 @@ section {
 
 @media (max-width: 640px) {
   .stats-counter {
-    background: url("../img/foods/menuphonebanner.png") center center;
+    background: url("../img/foods/menuphonebanner.webp") center center;
     background-size: cover;
     min-height: 333px;
   }
